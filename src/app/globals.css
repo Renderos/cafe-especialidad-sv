@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-fraunces);
+
+  --color-crema: #faf5ee;
+  --color-arena: #efe3d3;
+  --color-espresso: #2a1a12;
+  --color-tostado: #6b3f26;
+  --color-cereza: #b8432f;
+  --color-hoja: #3f6b3a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-crema);
+  color: var(--color-espresso);
+}
+
+::selection {
+  background: var(--color-cereza);
+  color: var(--color-crema);
+}
